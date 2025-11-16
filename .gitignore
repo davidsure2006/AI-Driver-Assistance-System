@@ -1,0 +1,42 @@
+# Large video files - upload separately or use Git LFS
+*.mp4
+*.avi
+*.mov
+
+# Virtual environments
+venv/
+venv_stable/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model files (can be large)
+*.h5
+*.pkl
+*.pth
+*.onnx
+*.tflite
+*.pb
+
+# Dataset folders (can be very large)
+GTSRB_data/
