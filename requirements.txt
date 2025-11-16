@@ -1,0 +1,86 @@
+# ============================================================================
+# Driver Monitoring & Lane Detection System - Raspberry Pi Requirements
+# ============================================================================
+# CRITICAL: Python Version 3.9, 3.10, or 3.11 ONLY
+# DO NOT use Python 3.13+ (incompatible with some dependencies)
+# Recommended: Python 3.10 or 3.11 for Raspberry Pi
+# Tested on: Raspberry Pi 4 Model B (4GB/8GB RAM)
+# ============================================================================
+
+# Core Computer Vision (compatible with Python 3.9-3.11)
+opencv-python>=4.8.0,<4.10.0
+opencv-contrib-python>=4.8.0,<4.10.0
+
+# Numerical Computing (Python 3.9-3.11 compatible)
+# Note: NumPy 2.x requires Python 3.9+, but stick to 1.x for better compatibility
+numpy>=1.23.0,<2.0.0
+
+# MediaPipe for Face Detection (Python 3.9-3.11 compatible)
+# MediaPipe 0.10.x works best with Python 3.9-3.11
+mediapipe>=0.10.0,<0.11.0
+
+# Scientific Computing (for distance calculations)
+# scipy 1.11+ requires NumPy < 2.0
+scipy>=1.10.0,<1.13.0
+
+# Audio Alerts
+pygame>=2.5.0,<2.6.0
+
+# Image Processing Utilities
+imutils>=0.5.4,<0.6.0
+
+# Video Processing (for lane detection)
+# moviepy and dependencies compatible with Python 3.9-3.11
+moviepy>=1.0.3,<1.1.0
+imageio>=2.25.0,<2.35.0
+imageio-ffmpeg>=0.4.8,<0.5.0
+
+# Utility Libraries
+docopt>=0.6.2
+python-dotenv>=1.0.0,<2.0.0
+
+# Matplotlib (for visualization and testing)
+# Python 3.9-3.11 compatible
+matplotlib>=3.5.0,<3.9.0
+
+# Optional: Performance monitoring
+psutil>=5.9.0,<6.0.0
+
+# Optional: Pillow for image manipulation
+# Pillow 10.x works with Python 3.9-3.11
+Pillow>=9.5.0,<11.0.0
+
+# Additional dependencies for Python 3.9-3.11 compatibility
+decorator>=4.4.2,<5.0.0
+typing-extensions>=4.0.0; python_version < '3.10'
+
+# ============================================================================
+# RASPBERRY PI SPECIFIC NOTES:
+# ============================================================================
+# 1. IMPORTANT: Use Python 3.9, 3.10, or 3.11 ONLY
+#    - Python 3.10 or 3.11 recommended for best performance
+#    - DO NOT use Python 3.13+ (dependency incompatibility)
+#    - Check version: python3 --version
+#
+# 2. Install system dependencies first (see RASPBERRY_PI_SETUP.md)
+#
+# 3. Create virtual environment with correct Python version:
+#    python3.11 -m venv venv  # or python3.10 / python3.9
+#    source venv/bin/activate
+#    pip install --upgrade pip setuptools wheel
+#    pip install -r requirements.txt
+#
+# 4. Enable camera interface: sudo raspi-config
+#
+# 5. For Raspberry Pi Camera Module, also install:
+#    - picamera2 (for Pi Camera Module v2/v3)
+#    sudo apt install -y python3-picamera2
+#
+# 6. Recommended: Increase GPU memory to 256MB in /boot/config.txt
+#
+# 7. If you encounter installation errors:
+#    - Ensure Python version is 3.9-3.11
+#    - Update pip: pip install --upgrade pip
+#    - Install system dependencies from RASPBERRY_PI_SETUP.md
+#    - Try installing packages individually if batch install fails
+# ============================================================================
