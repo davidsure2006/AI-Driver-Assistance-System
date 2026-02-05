@@ -1,4 +1,4 @@
-# AI-Powered Driver Assistance System (ADAS)
+# AI-Powered Driver Assistance System
 
 This repository contains an integrated Advanced Driver Assistance System combining driver monitoring (drowsiness and behavioral analysis) and forward-view road perception (traffic sign recognition and lane/turn detection). The project targets Raspberry Pi 5 for edge deployment and supports a desktop test mode.
 
