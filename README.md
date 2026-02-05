@@ -61,7 +61,7 @@ python integrated_driver_monitoring.py
 ![5(copy)](https://github.com/user-attachments/assets/d83a36f7-062c-4d51-8e14-286f58e78927)
 
 ## Flowchart
-<img width="2631" height="5266" alt="Project Working Flow" src="https://github.com/user-attachments/assets/c65b77f5-7740-46e7-b0b7-b5012d9da39c" />
+<img width="1024" height="1024" alt="Project Working Flow" src="https://github.com/user-attachments/assets/c65b77f5-7740-46e7-b0b7-b5012d9da39c" />
 
 ## Working Video Link
 https://drive.google.com/drive/folders/1f9GK_zgUmIyGqUU8PetvFu_EmTLHrBPO
