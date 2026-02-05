@@ -48,7 +48,7 @@ python integrated_driver_monitoring.py
 - If MediaPipe is used, ensure `numpy<2.0` in that environment; YOLO/PyTorch may require a separate venv due to different numpy requirements.
 - For better performance on Raspberry Pi 5, consider increasing GPU memory and using TensorFlow Lite with quantized models.
 
-## Methodology (short)
+## Methodology
 - Driver monitoring uses MediaPipe (or Dlib) landmarks and computes EAR/MAR for blink and yawn detection.
 - Road perception runs a TFLite classifier trained on GTSRB; outputs are fused with lane curvature to detect sharp turns.
 - All frames are processed in worker threads; the main thread composes combined frames and handles display + input.
@@ -57,7 +57,5 @@ python integrated_driver_monitoring.py
 Use a Markdown renderer that supports Mermaid to visualize the flowchart included in `PROJECT_REPORT.md`.
 
 ## License & Contact
-(Include your license or institution info here.)
+(We will include your license or institution info here.)
 
----
-Generated: November 16, 2025
