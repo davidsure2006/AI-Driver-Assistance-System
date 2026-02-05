@@ -53,8 +53,13 @@ python integrated_driver_monitoring.py
 - Road perception runs a TFLite classifier trained on GTSRB; outputs are fused with lane curvature to detect sharp turns.
 - All frames are processed in worker threads; the main thread composes combined frames and handles display + input.
 
-## Mermaid flowchart
-Use a Markdown renderer that supports Mermaid to visualize the flowchart included in `PROJECT_REPORT.md`.
+## Flowchart
+<img width="2631" height="5266" alt="Project Working Flow" src="https://github.com/user-attachments/assets/c65b77f5-7740-46e7-b0b7-b5012d9da39c" />
+
+## Hardware Design
+<img width="1024" height="1024" alt="Hardware Design Image" src="https://github.com/user-attachments/assets/88548de4-2c0e-46bd-882a-2b7bfb5c44f0" />
+
+
 
 ## License & Contact
 (We will include your license or institution info here.)
